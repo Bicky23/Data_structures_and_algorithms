@@ -14,7 +14,7 @@ def merge_sort(array):
 def merge(left, right):
     # empty merged list
     merged = []
-    ''' For both the sorted lists check compare the first elements
+    ''' For both the sorted lists, compare their first element,
     then remove the element which is smaller and put it in the merged list '''
     while len(left) and len(right):
         if left[0] <= right[0]:
