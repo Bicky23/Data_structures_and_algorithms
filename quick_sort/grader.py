@@ -4,7 +4,7 @@ from __future__ import print_function
 import datetime
 import random
 
-from quick_sort import quick_sort
+from quick_sort_inplace import quicksort
 
 npassed, nfailed = 0, 0
 for itest in range(1, 13):
@@ -14,7 +14,7 @@ for itest in range(1, 13):
     array = [random.randint(1, 100*nelements) for _ in range(nelements)]
 
     tic = datetime.datetime.now()
-    submission = quick_sort(array)
+    submission = quicksort(array, 0, len(array)-1)
     toc = datetime.datetime.now()
     answer = sorted(array)
 
