@@ -4,7 +4,7 @@ from __future__ import print_function
 import datetime
 import random
 
-from quick_sort_inplace import quicksort
+from quick_sort_inplace_2 import quicksort
 
 npassed, nfailed = 0, 0
 for itest in range(1, 13):
