@@ -32,6 +32,3 @@ def quicksort(array, low=0, high=None):
     quicksort(array, low=right+1, high=high)
 
     return array
-
-
-print(quicksort([1,2,3,4,6,10,8,100,26,57,78,35]))
